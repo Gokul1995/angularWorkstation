@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+
+<head>
+
+    <title>Angular Bootstrap and Animation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/LabController.js"></script>
+    <script src="./app/dateController.js"></script>
+    <!-- <link rel="stylesheet" href="./app/assets/css/style.css"> -->
+</head>
+
+<body ng-controller="LabController as vm">
+    <div class="container">
+        <h1>Angular Bootstrap and Animation</h1>
+    </div>
+
+    <div class="form-group">
+        <button type="button" uib-tooltip="Click this button to do something amazing." class="btn btn-primary">Hover to show Tooltip</button>
+    </div>
+
+    <div class="form-group">
+        <button uib-tooltip="Click to show popover" uib-popover="Popover content goes here." popover-title="Popover Title" type="button"
+            class="btn btn-default">Click to show Popover</button>
+    </div>
+
+    <div class="form-group">
+        <button type="button" class="btn btn-warning" ng-click="vm.addWarning()" uib-tooltip="Click to add warning">Add Warning</button>
+        <button type="button" class="btn btn-danger" ng-click="vm.addDanger()" uib-tooltip="Click to add danger.">Add Danger</button>
+    </div>
+    <uib-alert class="alert-animation" ng-repeat="alert in vm.alerts" type="{{alert.type}}" close="vm.dimissAlert($index)">{{alert.text}}</uib-alert>
+
+    <div ng-controller="DateController">
+    <div style="display:inline-block; min-height:290px;"> 
+        <div uib-datepicker ng-model="datePicked" datepicker-options="options" ></div>
+        <pre>{{datePicked | date:'fullDate'}}</pre>
+    </div>
+    </div>
+</body>
+
+</html>

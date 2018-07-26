@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Directives</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/LabController.js"></script>
+    <script src="./app/detailDirective.js"></script>
+</head>
+
+<body ng-controller="LabController as vm">
+    <div class="container">
+        <h1>Directives</h1>
+        <div>
+            <detail-directive action="vm.showDetail()" author="vm.author"></detail-directive>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

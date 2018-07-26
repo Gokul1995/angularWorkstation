@@ -1,0 +1,68 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Duster",
+      "color": "White",
+      "price": 3500000,
+      "avialiable": true,
+      "thumbnail": "content/images/duster.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Scorpio",
+      "color": "Back",
+      "price": 3700000,
+      "avialiable": true,
+      "thumbnail": "content/images/scorpio.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Ford",
+      "color": "grey",
+      "price": 2400000,
+      "avialiable": true,
+      "thumbnail": "content/images/ford-mustang.png"
+    },
+    {
+      "id": 4,
+      "name": "Eon",
+      "color": "red",
+      "price": 1835000,
+      "avialiable": true,
+      "thumbnail": "content/images/eon.jpg"
+    },
+    {
+      "id": 5,
+      "name": "i10",
+      "color": "blue",
+      "price": 2625000,
+      "avialiable": true,
+      "thumbnail": "content/images/eon.jpg"
+    },
+    {
+      "name": "Volkswagen",
+      "color": "Silver",
+      "price": "55121230",
+      "id": 6
+    },
+    {
+      "name": "Beast",
+      "color": "Brown",
+      "price": "7418527",
+      "id": 7
+    },
+    {
+      "name": "GTO Mustang",
+      "color": "black",
+      "price": "2500000",
+      "id": 8
+    },
+    {
+      "name": "VW",
+      "color": "Black",
+      "price": "1234567",
+      "id": 9
+    }
+  ]
+}

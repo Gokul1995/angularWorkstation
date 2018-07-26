@@ -1,0 +1,40 @@
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>FName</th>
+                <th>LName</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="data in author">
+                <td>{{data.fName}}</td>
+                <td>{{data.lName}}</td>
+                <td>{{data.email}}</td>
+
+                <td>
+                    <input type="button" ng-click="action(data)" value="View Detail" class="btn btn-primary" />
+                </td>
+
+            </tr>
+        </tbody>
+
+    </table>
+    <div class="container" ng-if="detail">
+        <h3>
+            <strong>This detail will disappear after {{countdown}} sec.</strong>
+        </h3>
+
+            
+        <p>
+            First Name : {{detail.fName}}
+        </p>
+        <p>
+            Last Name : {{detail.lName}}
+        </p>
+        <p>
+            Email : {{detail.email}}
+        </p>
+    </div>
+</div>

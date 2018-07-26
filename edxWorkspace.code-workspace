@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "Mod1Lab"
+		},
+		{
+			"path": "Mod2Lab"
+		},
+		{
+			"path": "DisplayDetailDirective"
+		},
+		{
+			"path": "angular-bootstrap-test"
+		},
+		{
+			"path": "Mod4Lab"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "angular-bootstrap-test"
+	}
+}

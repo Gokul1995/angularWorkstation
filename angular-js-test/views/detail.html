@@ -1,0 +1,31 @@
+<div class="content" ng-if="!carDetail">
+    <p>No detail found</p>
+</div>
+<div class="content" style="text-align: center">
+    <h1>The Detail page for {{carDetail.name}}</h1>
+    <div ng-if="!carDetail.thumbnail">
+        No image available please add one
+    </div>
+    <img ng-src="{{carDetail.thumbnail}}" style="text-align: center">
+
+    <ul>
+        <li>
+            Name : {{carDetail.name}}
+        </li>
+        <li>
+            Color: {{carDetail.color}}
+        </li>
+        <li>
+            Price: {{carDetail.price | currency : 'Rs. '}}
+        </li>
+    </ul>
+    <!-- <ul ng-if="!isDetailAvailable">
+        <p>
+            Unable to find detail . Please go back and procced once again.
+        </p>
+    </ul> -->
+    <a href="#!/directory/{{carDetail.id}}/edit">Update Detail</a>
+</div>
+<div class="content">
+    <a href="#!/directory">Go Back</a>
+</div>

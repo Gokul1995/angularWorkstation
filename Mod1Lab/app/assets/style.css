@@ -1,0 +1,11 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aquamarine;
+}
+input.ng-touched.ng-dirty.ng-invalid {
+    border-color: red;
+}
+input.ng-valid {
+    /* background-color: rgb(223, 241, 223); */
+    border-color: rgb(223, 241, 223);
+}

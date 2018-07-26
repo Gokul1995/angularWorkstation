@@ -1,0 +1,25 @@
+ .ng-enter {
+	       -webkit-transition: 1s linear opacity;
+	       transition: 1s linear opacity;
+	       opacity: 0;
+	       margin-right: 100%;
+	       font-size: 0px;
+	   }
+
+	   .ng-enter-active {
+	       opacity: 1;
+	       margin-right: 0;
+	       font-size: 100%;
+	   }
+
+	   .ng-leave {
+	       -webkit-transition: 1s linear opacity;
+	       transition: 1s linear opacity;
+	       opacity: 1;
+	       max-height: 999px;
+	   }
+
+	   .ng-leave-active {
+	       opacity: 0;
+	       max-height: 0;
+	   }
